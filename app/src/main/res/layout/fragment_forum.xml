@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForumFragment"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/headerForum"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/purplerounded">
+
+        <ImageView
+            android:src="@drawable/bg_pattern"
+            android:id="@+id/patern"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/welcometext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:fontFamily="@font/p_regular"
+            android:text="Forum"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_float"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/ic_baseline_add"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rc_forum"
+        android:layout_below="@+id/headerForum"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view_forum"
+            tools:listitem="@layout/row_item_forum"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

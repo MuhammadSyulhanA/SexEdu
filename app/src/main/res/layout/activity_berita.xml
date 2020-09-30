@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeritaActivity">
+
+    <RelativeLayout
+        android:id="@+id/imgHolder"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@drawable/roundedtrans">
+
+        <ImageView
+            android:id="@+id/blurImgBerita"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundedtrans"
+            android:scaleType="centerCrop"
+            android:src="@drawable/next" />
+
+        <ImageView
+            android:id="@+id/imgBeritaDetail"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/roundedtrans"
+            android:scaleType="centerCrop"
+            android:src="@drawable/next"
+            android:elevation="8dp"/>
+
+        <RelativeLayout
+            android:id="@+id/btnBackBerita"
+            android:layout_marginTop="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/roundedwhite"
+            android:layout_marginLeft="25dp"
+            android:elevation="40dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/arrow_left"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleBerita"
+            android:text="Ini adalah Title"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_below="@id/imgBeritaDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

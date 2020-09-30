@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="#dddddd"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Beranda"
+        android:icon="@drawable/feather_home"
+        app:cnb_backgroundColor="#e8d3f5"
+        app:cnb_iconColor="#7804c6"
+        app:cnb_textColor="#7804c6"/>
+
+    <item
+        android:id="@+id/kategori"
+        android:title="Kategori"
+        android:icon="@drawable/feather_list"
+        app:cnb_backgroundColor="#e8d3f5"
+        app:cnb_iconColor="#7804c6"
+        app:cnb_textColor="#7804c6"/>
+
+    <item
+        android:id="@+id/forum"
+        android:title="Forum"
+        android:icon="@drawable/question"
+        app:cnb_backgroundColor="#e8d3f5"
+        app:cnb_iconColor="#7804c6"
+        app:cnb_textColor="#7804c6"/>
+
+    <item
+        android:id="@+id/profil"
+        android:title="Profil"
+        android:icon="@drawable/feather_user"
+        app:cnb_backgroundColor="#e8d3f5"
+        app:cnb_iconColor="#7804c6"
+        app:cnb_textColor="#7804c6"/>
+</menu>

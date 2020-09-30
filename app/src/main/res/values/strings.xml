@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Sex.Edu</string>
+
+
+    <string-array name="title">
+        <item>Berita 1</item>
+        <item>Berita 2</item>
+        <item>Berita 3</item>
+        <item>Berita 4</item>
+        <item>Berita 5</item>
+    </string-array>
+
+    <string-array name="link_image">
+        <item>https://deadline.com/wp-content/uploads/2020/01/sexeducation-e1587107829137.jpg</item>
+        <item>https://badgerherald.com/wordpress/wp-content/uploads/2020/04/Screen-Shot-2020-04-11-at-4.39.54-PM.png</item>
+        <item>https://www.plannedparenthood.org/uploads/filer_public_thumbnails/filer_public/70/5a/705a0a6b-e739-489e-b596-79ee54107dd5/1200x600-sex-education.jpg__800x600_q75_subsampling-2.jpg</item>
+        <item>https://1.bp.blogspot.com/-pG3a-hL3fd8/VRok6rQOOFI/AAAAAAAAAA0/MdQ9cyquOQM/s1600/sex-ed1.jpg</item>
+        <item>https://thehandwritten.com/wp-content/uploads/sites/41/2016/11/152.jpg</item>
+        <item>https://world.edu/wp-content/uploads/2018/07/sex-ed.jpg</item>
+    </string-array>
+
+    <string name="daftar">Daftar</string>
+    <string name="masuk">Masuk</string>
+</resources>

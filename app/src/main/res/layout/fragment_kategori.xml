@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KategoriFragment"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/headerKategori"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/purplerounded">
+
+        <ImageView
+            android:src="@drawable/bg_pattern"
+            android:id="@+id/patern"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/welcometext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:fontFamily="@font/p_regular"
+            android:text="Kategori"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/headerKategori"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view"
+            tools:listitem="@layout/row_item_kategori"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

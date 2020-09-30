@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BerandaFragment"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/purplerounded">
+
+        <ImageView
+            android:src="@drawable/bg_pattern"
+            android:id="@+id/patern"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/welcometext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:fontFamily="@font/p_regular"
+            android:text="Hai, FreeDOS"
+            android:paddingLeft="40dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Yuk TIngkatkan Progress belajar kamu"
+            android:fontFamily="@font/p_regular"
+            android:paddingLeft="40dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/welcometext"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/beritatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Berita Terkini"
+        android:fontFamily="@font/p_regular"
+        android:paddingLeft="40dp"
+        android:layout_below="@id/header"
+        />
+
+    <RelativeLayout
+        android:layout_below="@+id/beritatext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+    <!-- reyclerview cardview -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcView"
+            android:layout_width="wrap_content"
+            android:layout_height="380dp"
+            tools:listitem="@layout/card_berita" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btnBeritaClick"-->
+<!--            android:textColor="#000000"-->
+<!--            android:text="Buka Activity Berita"-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="50dp"/>-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
